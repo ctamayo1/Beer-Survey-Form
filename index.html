@@ -1,0 +1,97 @@
+<head>
+  <meta name ='description' content = 'Beer Survey Form'>
+  <meta name = 'keywords' content = 'Beer, Survey'>
+</head>
+<h1 id = 'title'> Beer Lovers </h1>
+<body>
+<div id = 'description'>
+  <p> Do you enjoy drinking beer? Us too. Here at Beer Lovers, we want hear from you what kind of beer person you are!
+  </p>
+</div>
+ <div id = 'box1'>
+ 
+   <div class = 'same-line'>
+     <h2> Lager </h2>
+       <p> Lager, the beer style almost everyone's familiar with, is known for its crispness and refreshing finish. </p>
+        <img src = 'https://i.imgur.com/WlA3tfc.png' alt = 'image of lager beer'>
+   </div>
+   <div class = 'same-line'>
+     <h2>Ale </h2>
+     <p> Ales are full-bodied with hints of fruit or spice and a hoppy finish. They're also known to quence a mean thirst. </p>
+     <img src = 'https://i.imgur.com/bppmSpp.png' alt = 'image of ale beer'>
+   </div>
+   <div class = 'same-line'>
+     <h2> Malt</h2>
+     <p> Sweeth tooth? Malts, often containing notes of caramel, toffee, and nuts, are dark and sweet in flavor. </p>
+     <img src = 'https://i.imgur.com/BEGsYfH.png' alt = 'image of malt beer'>
+   </div>
+   <div class = 'same-line'>
+     <h2>Stout </h2>
+     <p> Stouts, owing their dark color to roasted barley, add depth and character to your glass. If in doubt, stout it out. </p>
+     <img src = 'https://i.imgur.com/iAxwlQC.png' alt = ' image of stout beer'>
+   </div>
+  </div>
+</body>
+<div class = 'form-format1'>
+  <h2> Information </h2>
+<form id = #survey-form action = '/action_page.php' method= "get">
+  <p id = 'name-label'> Enter your name
+  </p>
+  <label for ='name'> Name: </label>
+  <input type = 'text' id = 'name' name = 'name' placeholder = 'John Smith' required> <br><br>
+  <p id = 'email-label'> Enter your email address
+  </p>
+  <label for = 'email'> Email: </label>
+  <input type = 'text' id = 'email' name= 'email' placeholder = 'john.smith@email.com' required><br><br>
+  <p id= 'number-label'> Enter your phone number
+     </p>
+  <label for = 'number'> Phone Number: </label> <input type = 'tel' id = 'number' name = 'number' placeholder = '000-000-0000' min= '0' max = '9' size = '10' required> <br><br>
+  <div class = 'form-format2'>
+  <p id = 'dropdown-label'> Types of beer<p>
+  <label for ='beer'> Favorite beer: </label>
+  <select name = 'beer' id = 'dropdown' required>
+    <option value = 'placeholder'> Select one </option> 
+    <option value = 'ale'>Ale</option>
+    <option value = 'lager'>Lager</option>
+      <option value = 'malt'>Malt</option>
+      <option value = 'stout'>Stout</option>
+    </div>
+  </div>
+  </select>
+  
+  <!-- read user story #13 -->
+  
+  <h2> Beer Styles </h2>
+  <p> (Select as many as you like) </p>
+  <!-- adding user story #14 for types of beer-->
+  <div id = 'beer-style'>
+    <label for = 'amber'> <input id = 'amber' type= 'checkbox' value ='amber' name = 'beer-style'> Amber </label>
+    <label for = 'blonde'> <input id = 'blond' type = 'checkbox' value = 'blonde' name = 'beer-style'> Blonde </label>
+    <label for = 'brown'> <input id = 'brown' type= 'checkbox' value = 'brown' name = 'beer-style'> Brown </label>
+    <label for =  'cream'> <input id = 'cream' type= 'checkbox' value = 'cream' name = 'beer-style'> Cream </label><br>
+    <label for = 'dark'> <input id = 'dark' type= 'checkbox' value = 'dark' name = 'beer-style'> Dark </label>
+    <label for = 'pale'> <input id = 'pale' type= 'checkbox' value = 'pale' name = 'beer-style'> Pale </label>
+    <label for = 'strong' > <input id = 'strong' type= 'checkbox' value = 'strong' name = 'beer-style'> Strong </label>
+    <label for = 'wheat'> <input id = 'wheat' type= 'checkbox' value = 'wheat' name = 'beer-style'> Wheat </label><br>
+    <label for = 'red'> <input id = 'red' type= 'checkbox'  value = 'red' name = 'beer-style'> Red </label>
+    <label for = 'india pale ale'> <input id = 'india-pale-ale' type= 'checkbox' value = 'india pale ale' name = 'beer-style'> India Pale Ale </label>
+    <label for = 'lime'> <input id = 'lime' type= 'checkbox' value = 'lime' name = 'beer-style'> Lime </label>
+    <label for = 'pilsner'> <input id = 'pilsner' type= 'checkbox' value = 'pilsner' name = 'beer-style'> Pilsner </label><br>
+           <label for = 'golden'> <input id = 'golden' type= 'checkbox' value = 'golden' name = 'beer-style'> Golden </label>
+    <label for = 'fruit'> <input id = 'fruit' type= 'checkbox' value = 'fruit' name = 'beer-style'> Fruit </label>
+           <label for = 'honey'> <input id = 'honey' type= 'checkbox' value = 'honey' name = 'beer-style'> Honey </label>
+  </div>
+  <div>
+    <h3> Addtional Comments </h3>  
+  <textarea>
+    </textarea>
+  </div>
+  <button id ='submit'>Submit</button>
+  
+  
+</form>
+  </div>
+  
+<footer>
+  <a id = 'infoLink' target = '_blank' href = 'https://www.thebeerstore.ca/beer-101/beer-types/'>Info provided by The Beer Store</a>
+</footer>
